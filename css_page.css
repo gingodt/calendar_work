@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#controls select, #controls button {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#calendar {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.day {
+    display: inline-block;
+    width: 14.28%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+.day.off {
+    background-color: #ffcccc;
+}
+
+.day.holiday {
+    background-color: #ccffcc;
+}
+
+#days-off-list {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#days-off {
+    list-style-type: none;
+    padding: 0;
+}
+
+#days-off li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+#days-off button {
+    background-color: #ff6666;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#add-holiday {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#add-holiday input, #add-holiday button {
+    padding: 5px;
+    margin-right: 10px;
+}
